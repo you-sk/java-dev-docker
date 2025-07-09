@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  java-dev:
+    build: .
+    container_name: java-dev-container
+    volumes:
+      - ./src:/app/src
+      - ./out:/app/out
+    stdin_open: true
+    tty: true
